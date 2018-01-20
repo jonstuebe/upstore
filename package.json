@@ -1,7 +1,7 @@
 {
   "name": "upstore",
   "umdName": "UpStore",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "providerless state container with React bindings",
   "browser": "lib/upstore-umd.js",
   "main": "lib/upstore-cjs.js",
