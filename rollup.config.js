@@ -1,5 +1,4 @@
 import babel from "rollup-plugin-babel";
-import babelRuntimeExternal from "rollup-plugin-babel-runtime-external";
 import commonjs from "rollup-plugin-commonjs";
 import resolve from "rollup-plugin-node-resolve";
 import autoExternal from "rollup-plugin-auto-external";
@@ -34,12 +33,9 @@ export default [
     ],
     plugins: [
       babel({
-        exclude: "node_modules/**"
-      }),
-      babelRuntimeExternal({
-        helpers: false,
-        polyfill: false,
-        regenerator: true
+        exclude: "node_modules/**",
+        externalHelpers: false,
+        runtimeHelpers: true
       }),
       autoExternal()
     ]

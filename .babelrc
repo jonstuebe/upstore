@@ -11,5 +11,9 @@
     ],
     "react"
   ],
-  "plugins": ["external-helpers", "transform-class-properties"]
+  "plugins": [
+    "external-helpers",
+    "transform-class-properties",
+    "transform-runtime"
+  ]
 }

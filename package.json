@@ -15,19 +15,12 @@
     "start": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "lib/"
-  ],
+  "files": ["lib/"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonstuebe/upstore.git"
   },
-  "keywords": [
-    "react",
-    "javascript",
-    "redux",
-    "store"
-  ],
+  "keywords": ["react", "javascript", "redux", "store"],
   "author": "Jon Stuebe <jstuebe@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -39,6 +32,8 @@
     "babel-eslint": "^8.0.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "rollup": "^0.52.3",
@@ -50,8 +45,5 @@
   "peerDependencies": {
     "prop-types": "^15.0.0 || ^16.0.0",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0"
-  },
-  "dependencies": {
-    "rollup-plugin-babel-runtime-external": "^1.1.0"
   }
 }

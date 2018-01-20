@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
+import _regeneratorRuntime from "babel-runtime/generator";
 
 export default class Store {
   constructor(initialState = {}, reducer) {
