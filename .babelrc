@@ -4,16 +4,12 @@
       "env",
       {
         "targets": {
-          "browsers": ["last 3 versions"]
+          "browsers": ["last 2 versions"]
         },
         "modules": false
       }
     ],
     "react"
   ],
-  "plugins": [
-    "external-helpers",
-    "transform-class-properties",
-    "transform-runtime"
-  ]
+  "plugins": ["external-helpers", "transform-class-properties"]
 }

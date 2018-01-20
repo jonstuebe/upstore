@@ -33,9 +33,7 @@ export default [
     ],
     plugins: [
       babel({
-        exclude: "node_modules/**",
-        externalHelpers: false,
-        runtimeHelpers: true
+        exclude: "node_modules/**"
       }),
       autoExternal()
     ]
