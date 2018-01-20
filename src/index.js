@@ -1,7 +1,7 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 
-export default class Store {
+export default class UpStore {
   constructor(initialState = {}, reducer) {
     if (!reducer) {
       this.reducer = (state, action) => {
@@ -36,8 +36,8 @@ export default class Store {
     }
     return actions;
   };
-  dispatch = async action => {
-    const completedAction = await action();
+  dispatch = async (action, ...args) => {
+    const completedAction = await action.apply(null, args);
     this.setState(this.reducer(this.state, completedAction));
   };
   setState = newState => {
