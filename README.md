@@ -2,6 +2,8 @@
 
 providerless state container with React bindings. Includes UMD build
 
+[![version](https://img.shields.io/npm/v/upstore.svg?style=flat-square)](https://www.npmjs.com/package/@jonstuebe/upstore) [![build](https://travis-ci.org/jonstuebe/upstore.svg?branch=master)](https://www.npmjs.com/package/@jonstuebe/upstore)
+
 ## Install
 
 ### npm
