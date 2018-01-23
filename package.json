@@ -15,35 +15,20 @@
     "start": "rollup -c -w",
     "test": "jest --coverage"
   },
-  "files": [
-    "lib/"
-  ],
+  "files": ["lib/"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonstuebe/upstore.git"
   },
-  "keywords": [
-    "react",
-    "javascript",
-    "redux",
-    "store"
-  ],
+  "keywords": ["react", "javascript", "redux", "store"],
   "author": "Jon Stuebe <jstuebe@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jonstuebe/upstore/issues"
   },
-  "engines": {
-    "node": "9.3.0"
-  },
   "jest": {
-    "setupFiles": [
-      "./test/setupJest.js"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "setupJest.js"
-    ]
+    "setupFiles": ["./test/setupJest.js"],
+    "testPathIgnorePatterns": ["/node_modules/", "setupJest.js"]
   },
   "homepage": "https://github.com/jonstuebe/upstore#readme",
   "devDependencies": {
