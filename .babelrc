@@ -16,5 +16,11 @@
     "transform-runtime",
     "external-helpers",
     "transform-class-properties"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"], "react"],
+      "plugins": ["transform-class-properties"]
+    }
+  }
 }
